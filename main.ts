@@ -28,6 +28,9 @@ function Display_LED () {
         basic.pause(1)
     }
 }
+input.onButtonPressed(Button.AB, function () {
+    control.reset()
+})
 input.onButtonPressed(Button.B, function () {
     basic.clearScreen()
     Flash = 0
